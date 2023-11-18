@@ -1,4 +1,6 @@
-/** @type {import('tailwindcss').Config} */
+/**
+ * @type {import('@types/tailwindcss/tailwind-config').TailwindConfig}
+ */
 module.exports = {
   content: [
     "./app/**/*.{js,ts,jsx,tsx}",
@@ -6,8 +8,12 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      screens: {
+        'c1': '950px'
+      }
+    },
   },
-  plugins: [require("daisyui"), require('tailwindcss-dotted-background'),],
+  plugins: [require("daisyui"), require('tailwindcss-dotted-background'), require('flowbite/plugin')],
   
 };

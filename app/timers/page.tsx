@@ -1,4 +1,4 @@
-// `app/dashboard/page.tsx` is the UI for the `/dashboard` URL
+
 export default function Page() {
-    return <h1>Hello, Dashboard Page!</h1>
-  }
+  return <h1 className="justify-center text-center items-center text-4xl flex flex-wrap">TIMERS BETA is planned to be released at 2024-03-00</h1>
+}

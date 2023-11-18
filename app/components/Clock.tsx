@@ -23,9 +23,9 @@ const Clock = () => {
   const formattedDate = dateTime.toLocaleDateString([], { month: 'short', day: 'numeric', year: 'numeric' });
 
   return (
-    <div className="fixed bg-base-200/50 m-5 mt-16 px-6 py-2 items-center justify-center rounded-xl">
+    <div className="fixed flex flex-col bg-[#0f0f10] bg-opacity-50 m-5 px-6 py-2 items-center justify-center rounded-xl">
       <p>{formattedTime}</p>
-      {/* <p>{formattedDate}</p> */}
+      <p>{formattedDate}</p>
     </div>
   );
 };
